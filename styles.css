@@ -1,0 +1,78 @@
+/* ALL THAT IS JUST FOR SYNTAX */
+
+/* @import url('https://fonts.google.com') and more info there */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main > p.main_text:first-of-type, 
+header > p:not(:last-of-type) {
+    color: red; /* rgb(2, 3, 4) / #fafafa */
+    font-size: 18px; /* 16px = 1em */
+    font-style: italic;
+    font-weight: 500; /* bold / bolder */
+    font-family: 'Courier New', Courier, monospace; /* or from fonts.google (above) */
+    text-align: justify; /* center / right */
+    text-transform: capitalize; /* uppercase / lowercase */
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    line-height: 10px; /* to place it in the middle: use value like `height` */
+    text-decoration: underline; /* overline / line-through / none */
+    text-decoration-color: black;
+}   
+
+body {
+    background: /* background-color */ red 
+                /* background-image */ url('')
+                /* background-repeat */ no-repeat /* repeat / repeat-x */
+                /* ~x */ center
+                /* ~y */ top;
+    background-size: cover; 
+    background-attachment: fixed;
+    height: 500px; /* ?vh */
+}
+
+div.main_link:hover::after /* :active / :visited ::before */,
+#main_input:focus /* :disabled / enabled / required */ {
+    content: 'lorem'; /* attr(title) */
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    border-bottom: /* border-weight */ 4px 
+                   /* border-style */ dashed    
+                   /* border-color */ green;
+    background: #333;
+    color: #fff;
+    line-height: 70px;
+    margin-bottom: 50px;
+    padding: 20px 2.5%; /* up-down and left-right */
+    position: relative; /* absolute */
+    top: -10px;
+    right: 20px;
+    /* 
+    we can use
+    float: left;
+    z-index: 0;
+    but then we should place that in <main>, <footer>
+    */
+}
+
+#nav {
+    list-style: none;
+    display: block;
+}
+
+#nav > li:not(:empty)::first-letter {
+    display: inline;
+    border-right-style: groove;
+    cursor: pointer; /* progress / grab */
+}
+
+#nav > li:hover {
+    border-radius: 5px;
+}

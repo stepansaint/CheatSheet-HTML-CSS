@@ -1,0 +1,109 @@
+<!-- ALL THAT IS JUST FOR SYNTAX -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Ermakov Stepan">
+        <link rel="stylesheet" href="#">
+        <!-- <script src="#"></script> -->
+    </head> 
+
+    <body>
+
+        <header>
+            <a name="#upOfPage"></a>
+            <h1>to h6</h1>
+            <p>
+                This is <bold>bold</bold> and <i>italic</i> text.
+            </p>
+            <p>
+                This is <strong>special</strong> and <em>special</em>.
+            </p>
+            <p>
+                No or <s>yes</s>, you know, H<sub>2</sub>O and x<sup>2</sup>.
+            </p>
+            <p>
+                This is <abbr title="HyperTextMarkupLanguage">HTML</abbr>.
+            </p>
+            <p>
+                The city is <address>Mexico City</address>
+            </p>
+            <p>
+                This is <small>small</small> line: <code>int x = 5;</code>
+            </p>
+            <pre>
+                public static void main(String[] args) {
+                    int x = 5;
+                }
+            </pre>
+            <div>
+                <ul type="circle"> <!-- "square" -->
+                    <li>unordered</li>
+                </ul>
+                <ol start="3" type="A"> <!-- "I", "a", "1" -->
+                    <li>ordered</li>
+                </ol>
+            </div>
+            <hr>
+        </header>
+
+        <main>
+            <a href="https://www.google.com/">google in a new page</a> <!-- target="_self" -->
+            <a href="mailto:test@test.com">Write someone to mail</a><br>
+            <a href="#upOfPage" title="send me up">UP</a>
+
+            <form method="post">
+                <label for="someId">someLabel</label>
+                <input id="someId" name="name" placeholder="write here" type="text"><br>
+                <input maxlength="100" name="pass" readonly placeholder="can't write here" type="password"><br>
+                <input type="email" value="@gmail.com"><br> <!-- required / disabled / hidden -->
+                <input type="date">
+                <input type="checkbox"><br><br>
+                <input name="onlyOne" type="radio">
+                <input name="onlyOne" type="radio">
+                <input type="button" value="doesn't send anything">
+                <input type="submit" value="send"><br>
+                <input type="file">
+                <input type="reset" value="clear all fields">
+            </form>
+
+            <div> <!-- width="?%" height="?px" -->
+                <form action="otherPage.html" method="post">
+                    <textarea cols="10" rows="5">
+                        We can put (like value="") here some text (should be deleted).
+                    </textarea>
+                    <button>Send</button> <!-- == <input type="submit" value="send"> -->
+                    <button type="reset">Clear all fields</button>
+                </form>
+                <select> <!-- multiple -->
+                    <option disabled selected>Car</option>
+                    <option>Mercedes</option>
+                    <option>BMW</option>
+                </select>
+            </div>
+            <hr>
+        </main>
+
+        <aside>
+            <progress max="100" value="45">
+                45% if a browser can't show this bar
+            </progress>
+            <hr>
+        </aside>
+
+        <footer>
+            <details>
+                <summary>More</summary>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat in tempore harum fuga ratione non maiores iure, cum voluptate dolore, veniam atque sunt error, voluptatem aliquam? Maxime possimus obcaecati sit?
+            </details>
+            <hr>
+        </footer>
+        <!-- <script src="#"> or put code here </script> -->
+    </body>
+
+</html>
